@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"  href="todo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <head>
+        <body background="wood.jpg">
+            <div id="main-container" class="">
+                <div id = "container1">
+            <div class="container">
+                <h1 class="heading1 heading">Tasks</h1>
+                <h1 class="heading2 heading">Lists</h1>
+                        <div class="add-list-icon"><i class="fa fa-plus-circle" onclick="popup()" style="font-size:36px"></i></div>
+                        <p class="add-list-text" onclick="popup()">Add Item</p>
+            </div>
+            <div class="no-item" id="div-container" >
+                No items currently!
+            </div>
+            </div>
+            <div class="main-container-2" id="maincontainer2">
+                <div class="back" onclick="backbtn()">
+                    <i class='fas fa-arrow-circle-left'></i>
+                    <p class="back-text">Back</p>
+                </div>
+                <h1 class="main-heading" id="mainheading">
+                Trip to Paris
+                </h1>
+              <div id="innercontainer2">
+        
+              </div>
+               </div>
+            
+            <div class="item-container"id="div-add"></div>
+            
+            </div>
+            <div class="popup" id="popup-container">
+                    <div class="add-new-list-container add-new-list-container-animate">
+                    <p class="heading-new-container"><b>Add New List</b></p>
+                    <input type="text" value="" id="inputbox" placeholder="Add new list" class="input-box">
+                    <button class="Add-btn" onclick="addvalue()" id="addbtn">Add</button>
+                    <button class="close-btn" id="close-list-btn" onclick="closelist()">Close</button>
+            </div>
+        </div>
+            <div class="pop" id="pop-container">
+            <div class="add-new-sublist-container">
+                <p class="subheading-container">Add New Item</p>
+                <input type="text" id="subtodovalue" class="subtodobox-box">
+                <button class="subtodoAdd-btn" onclick="addsubtodolist()" id="subtodoaddbtn">Add</button>
+                <button class="subtodoclose-btn" onclick="closesubtodo()">close</button>
+             </div>
+        
+           
+            </div>
+            </div>
+           
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="todo.js"></script>
+        
+            
+            
+    
+    
+
+        </body>
+</html>

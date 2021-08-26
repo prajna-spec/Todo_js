@@ -1,0 +1,42 @@
+.container
+{
+    display:flex;
+    flex:wrap;
+
+}
+.heading1
+{
+    display:flex;
+    margin-left:50px;
+    
+    
+}
+.tasks
+{
+    font-weight: bolder;
+    font-size: 46px;
+    padding-right: 0.3em;
+    color:white;
+    
+}
+.List
+{
+    font-size:46px;
+    color:white;
+
+}
+.fa
+{
+    margin-top:50px;
+    margin-left:800px;
+    padding-right: 10px;
+    size:4em;
+    color:aliceblue;
+    
+
+}
+.AddItem
+{
+    font-size: 42px;
+    color:white;
+}

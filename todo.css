@@ -1,0 +1,459 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Encode Sans SC',sans-serif;
+    color: white;
+
+}
+.container{
+   margin-left: 200px;
+   margin-top: 0px;
+}
+.blur{
+    filter: blur(20px);
+    pointer-events: none;
+    
+}
+.heading{
+    display: inline-block;
+    color: white;
+
+}
+.heading1{
+    font-family: 'Encode Sans SC',sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    
+}
+.heading2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+}
+.add-list-icon{
+    display: inline-block;
+    color:white;
+    font-weight: lighter;
+    margin-left:500px;
+}
+.add-list-icon-2{
+    display: inline-block;
+    color:black;
+    font-weight: lighter;
+    margin-left:800px;
+ 
+}
+.add-list-text{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.no-item{
+    color: white;
+    margin-left: 200px;
+    font-weight: lighter;
+    font-size: 42px;
+    margin-top: 25px;
+}
+.add-new-list-container{
+    width: 450px;
+    height: 225px;
+    border: 1px solid black;
+    border-radius: 10px;
+    filter: blur(0px);
+    background-color: white;
+    position: absolute;
+    left: 441px;
+    bottom: 145px;
+    margin-bottom:100px;
+    
+}
+.add-new-list-container-animate{
+    animation-name: popupanimate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes popupanimate{
+    10%{
+       transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.heading-new-container{
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 22px;
+    font-size: 400;
+}
+.input-box{
+    outline: none;
+    border: 1px solid black;
+    width: 264px;
+    height: 32px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 8px 8px 8px lightgrey;
+    margin-left: 82px;
+}
+.Add-btn{
+    display: inline-block;
+    width: 99px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    margin-left: 104px;
+    font-size: 20px;
+    margin-top: 29px;
+    outline: none;
+}
+.popup{
+    display: none;
+    
+}
+.close-btn{
+    display: inline-block;
+    width: 99px;
+    height: 40px;
+    background-color:black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 29px;
+    outline: none;
+}
+.todo-list-container{
+    width: 250px;
+    height: 375px;
+    border: 1px solid black ;
+    border-radius: 10px;
+    background-color: white;
+    margin: 15px 30px;
+    overflow: hidden;
+    
+}
+.item-container{
+    margin: 20px 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner-text-1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-bottom: 10px;
+   
+}
+.horizontal-line{
+    background-color: black;
+    height: 2px;
+}
+
+.delicon{
+    font-size: 32px;
+    color: #e74c3c;
+    position: relative;
+    top: 251px;
+    left: 170px;
+    width: 36px;
+    height: 36px;;
+    
+}
+.addlist{
+    left: 152px;
+    width: 32px;
+    font-size: 32px;
+    color:black;
+    position: relative;
+    top: 256px;
+}
+.add-new-sublist-container{
+    width: 402px;
+    height: 214px;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 1;
+    filter: blur(0px);
+    background-color: white;
+    position: absolute;
+    left: 441px;
+    bottom: 125px;
+}
+.pop{
+   display: none;
+   animation: pop-animate 0.5s linear 0s 1 ;
+   margin-bottom: 100px;
+   z-index: 1;
+}
+@keyframes pop-animate{
+    10%{
+       transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+.subheading-new-container{
+    
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 22px;
+    font-size: 400;
+    
+}
+.subtodobox-box{
+    outline: none;
+    border: 1px solid #e74c3c;
+    width: 304px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 8px 8px 8px lightgrey;
+    margin-left: 52px;
+    
+}
+.subtodo-heading{
+    color : black;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    padding: 0px;
+    margin-left: 60px;
+    margin-top: 2px;
+}
+.markdown-button{
+    background-color: black;
+    border : none;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+    margin-left: 7px;
+}
+.markheading{
+    text-decoration: line-through;
+    text-decoration-color: black;
+    color: black;
+    margin-left: 120px;
+}
+.subtodoAdd-btn{
+    display: inline-block;
+    width: 99px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    margin-left: 104px;
+    font-size: 20px;
+    margin-top: 19px;
+    outline: none;
+   
+}
+.subtodoclose-btn{
+    display: inline-block;
+    width: 99px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 19px;
+    outline: none;
+}
+.main-container-2{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 745px;
+   display: none;
+   z-index: -1;
+}
+
+.main-heading{
+    display: inline-block;
+    margin: 2px 10px;
+    
+    font-size: 52px;
+    color: white;
+    text-align: center;
+    margin-left: 300px;
+}
+.back{
+    margin-left: 9px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.fa-arrow-circle-left{
+    color: white;
+   font-size: 32px;
+   
+}
+.back-text{
+    font-size: 32px;
+    display: inline-block;
+    color: white;
+}
+#innercontainer2{
+    margin-left: 35%;
+}
+@media only screen and (max-width: 600px){
+    .add-list-text{
+        display: none;
+    }
+    .heading{
+        font-size: 42px;
+    }
+    
+    .heading1{
+        
+        font-weight: 600;
+        font-size: 42px;
+        
+    }
+    .container{
+        margin-left: 20px;
+        margin-top: 50px;
+     }
+     .add-list-icon{
+      
+        margin-left:50px;
+    }
+    .no-item{
+        
+        margin-left: 20px;
+        font-weight: lighter;
+        font-size: 32px;
+        margin-top: 25px;
+    }
+    .add-new-list-container{
+        width: 300px;
+        height: 200px;
+        left: 21px;
+        margin-top:40px;
+    }
+    .heading-new-container{
+        color: black;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 22px;
+        font-size: 400;
+    }
+    .input-box{
+       width: 300px;
+       height: 40px;
+        margin-left: 32px;
+    }
+    .Add-btn{
+        width: 69px;
+        height: 30px;
+        margin-left: 54px;
+        font-size: 18px;
+      
+    }
+    .close-btn{
+        Width: 69px;
+        height: 30px;
+        margin-left: 14px;
+        font-size: 18px;
+    }
+    .todo-list-container{
+        width: 250px;
+        margin: 15px -110px;
+        overflow: hidden;
+        
+    }
+    .todomobile{
+        height: 60px;
+    }
+    
+    .item-container
+    {
+       
+      display: flex;
+      flex-direction: column;
+    }
+    .back-text{
+       font-size: 22px;
+    }
+    .fa-arrow-circle-left{
+        font-size: 22px
+    }
+    .main-heading{
+        font-size: 32px;
+        margin-left: 20px;
+    }
+    .add-new-sublist-container{
+        width: 300px;
+        margin: 15px -110px;
+        left: 130px;
+    }
+    .subheading-container{
+    
+        color: black;
+        text-align: center;
+        margin-bottom: 120px;
+        font-size: 22px;
+        font-size: 400;
+        
+    }
+    .subtodobox-box{
+        width: 220px;
+        height: 32px;
+        margin-left: 32px;
+    }
+    .subtodo-heading{
+        color : black;
+        display: inline-block;
+        font-size: 24px;
+        text-align: center;
+        padding: 0px;
+        margin-left: 60px;
+        margin-top: 2px;
+    }
+    .subtodoAdd-btn{
+        display: inline-block;
+    width: 84px;
+    height: 36px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    margin-left: 39px;
+    font-size: 19px;
+    margin-top: 19px;
+    
+       
+    }
+    .subtodoclose-btn{
+        display: inline-block;
+    width: 84px;
+    height: 36px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    margin-left: 10px;
+    font-size: 19px;
+    margin-top: 19px;
+    outline: none
+    }
+    
+}
